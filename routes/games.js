@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const x = require('../games/scrapers/xbox');
+const x = require('../functions/lowdb');
 
 router.get('/xbox', (req, res) => {
     res.send('hello');

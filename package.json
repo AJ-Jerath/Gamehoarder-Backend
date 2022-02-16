@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AJ-Jerath/Gamehoarder-Backend#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "lowdb": "^1.0.0",
     "puppeteer": "^13.3.2"
   },
   "devDependencies": {

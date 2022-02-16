@@ -25,4 +25,4 @@ const xbox = async () => {
     return results;
 };
 
-xbox().then((res) => console.log(res))
+module.exports = xbox;
