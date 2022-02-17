@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const x = require('../functions/lowdb');
+const db = require('../functions/lowdb');
 
-router.get('/xbox', (req, res) => {
-    res.send('hello');
+router.get('/', (req, res) => {
+    res.json(db.value());
 });
 
 module.exports = router;

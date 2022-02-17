@@ -1,20 +1,35 @@
 {
-  "0": {
-    "image": "https://store-images.s-microsoft.com/image/apps.56845.13614951958208853.68b63f8a-5b5e-4b1b-81d8-26b8e0bb260c.56bf34e9-16bf-4bd7-80d5-3b7e6569bfbb",
-    "imageAlt": "Aground boxshot",
-    "title": "Aground",
-    "date": "1/16 – 2/15"
-  },
-  "1": {
-    "image": "https://store-images.s-microsoft.com/image/apps.35482.67568884242687319.e2b47772-e8cd-4a59-a59f-0451436418fb.771ae397-1023-45f8-a326-461454488bdd",
-    "imageAlt": "Broken Sword 5: The Serpent's Curse boxshot",
-    "title": "Broken Sword 5: The Serpent's Curse",
-    "date": "2/1 – 2/28"
-  },
-  "2": {
-    "image": "https://store-images.s-microsoft.com/image/apps.53308.71989577144229475.3fee7f65-0487-45c4-997e-b0daff52f23f.f41cbff4-b7d2-4145-92a9-db96c419832f",
-    "imageAlt": "Hydrophobia boxshot",
-    "title": "Hydrophobia",
-    "date": "2/1 – 2/15"
-  },
+  "games": {
+    "xbox": {
+      "job": false,
+      "arr": [
+        {
+          "image": "https://store-images.s-microsoft.com/image/apps.35482.67568884242687319.e2b47772-e8cd-4a59-a59f-0451436418fb.771ae397-1023-45f8-a326-461454488bdd",
+          "imageAlt": "Broken Sword 5: The Serpent's Curse boxshot",
+          "title": "Broken Sword 5: The Serpent's Curse",
+          "date": "2/1 – 2/28"
+        },
+        {
+          "image": "https://store-images.s-microsoft.com/image/apps.36524.14392462620883000.4b9898a4-26f5-46c3-8226-04d724cc52eb.1d7ca962-e578-4327-b738-a4c2c4909906",
+          "imageAlt": "Aerial_Knight's Never Yield boxshot",
+          "title": "Aerial_Knight's Never Yield",
+          "date": "2/16 – 3/15"
+        },
+        {
+          "image": "https://store-images.s-microsoft.com/image/apps.13933.69966541109071306.33bac322-4251-4788-a6b3-47d73594631e.3ad0c5de-8c00-47a2-8735-852155a7e66a",
+          "imageAlt": "Band of Bugs boxshot",
+          "title": "Band of Bugs",
+          "date": "2/16 – 2/28"
+        }
+      ]
+    },
+    "playstation": {
+      "job": false,
+      "arr": []
+    },
+    "epic": {
+      "job": false,
+      "arr": []
+    }
+  }
 }
