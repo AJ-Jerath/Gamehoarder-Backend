@@ -1,30 +1,30 @@
 const puppeteer = require('puppeteer');
 
 // Xbox Scraper
-// const xbox = async () => {
-//     const browser = await puppeteer.launch({ headless: false });
-//     const page = await browser.newPage();
-//     await page.goto('https://www.xbox.com/en-US/live/gold#gameswithgold');
+const xbox = async () => {
+    const browser = await puppeteer.launch({ headless: false });
+    const page = await browser.newPage();
+    await page.goto('https://www.xbox.com/en-US/live/gold#gameswithgold');
 
-//     await page.waitForSelector('#root');
+    await page.waitForSelector('#root');
 
-//     const results = await page.$$eval('#BodyContent #ContentBlockList_9 .gameDivsWrapper section', gameDivs => {
-//         return gameDivs.map(gameDiv => {
-//             xbGames = {};
+    const results = await page.$$eval('#BodyContent #ContentBlockList_9 .gameDivsWrapper section', gameDivs => {
+        return gameDivs.map(gameDiv => {
+            xbGames = {};
 
-//             xbGames.image = gameDiv.querySelector('a .containerIMG img').getAttribute('src');
-//             xbGames.imageAlt = gameDiv.querySelector('a .containerIMG img').getAttribute('alt');
-//             xbGames.title = gameDiv.querySelector('a div .c-heading').innerText;
-//             xbGames.date = gameDiv.querySelector('a div p .availDate').innerText;
+            xbGames.image = gameDiv.querySelector('a .containerIMG img').getAttribute('src');
+            xbGames.imageAlt = gameDiv.querySelector('a .containerIMG img').getAttribute('alt');
+            xbGames.title = gameDiv.querySelector('a div .c-heading').innerText;
+            xbGames.date = gameDiv.querySelector('a div p .availDate').innerText;
 
-//             return xbGames;
-//         })
-//     });
+            return xbGames;
+        })
+    });
 
-//     browser.close();
+    browser.close();
     
-//     return results;
-// };
+    return results;
+};
 
 // Playstation Scraper
 const playstation = async () => {
@@ -35,8 +35,10 @@ const playstation = async () => {
     await page.waitForSelector('#gdk__content');
 
     const results = await page.$$eval('#gdk__content .cmp-container #gdk__content .section:nth-of-type(2) section div .contentgrid', divs => {
-        const gameDivs = [divs[1], divs[2]];
-        
+        const divOne = divs[1].querySelectorAll('.box');
+        const divTwo = divs[2].querySelector('.box');
+        const gameDivs = [...divOne, divTwo];
+
         return gameDivs.map(gameDiv => {
             psGames = {};
 
@@ -44,6 +46,7 @@ const playstation = async () => {
             psGames.imageTwo = gameDiv.querySelector('.imageblock .media-block figure picture source').getAttribute('srcset');
             psGames.imageAlt = gameDiv.querySelector('.imageblock .media-block figure picture').getAttribute('data-alt');
             psGames.title = gameDiv.querySelector('.textblock .text-block h3').innerText;
+            psGames.ps5 = gameDiv.querySelector('.textblock .text-block').innerText == 'PlayStation®5 bonus game*' ? true : false;
 
             return psGames;
         })
@@ -51,14 +54,10 @@ const playstation = async () => {
 
     browser.close();
     
-    console.log("res", results);
-
     return results;
 };
 
-playstation();
-
-// module.exports = {
-//     xbox,
-//     playstation
-// }
+module.exports = {
+    xbox,
+    playstation
+}

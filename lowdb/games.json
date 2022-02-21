@@ -1,7 +1,7 @@
 {
   "games": {
     "xbox": {
-      "job": false,
+      "jobFailed": false,
       "arr": [
         {
           "image": "https://store-images.s-microsoft.com/image/apps.35482.67568884242687319.e2b47772-e8cd-4a59-a59f-0451436418fb.771ae397-1023-45f8-a326-461454488bdd",
@@ -24,11 +24,33 @@
       ]
     },
     "playstation": {
-      "job": false,
-      "arr": []
+      "jobFailed": false,
+      "arr": [
+        {
+          "image": "https://gmedia.playstation.com/is/image/SIEPDC/ufc-4-screenshot-01-ps4-24jun20-en-us",
+          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/ufc-4-screenshot-01-ps4-24jun20-en-us?$1600px$",
+          "imageAlt": "UFC® 4",
+          "title": "EA SPORTS™ UFC® 4",
+          "ps5": false
+        },
+        {
+          "image": "https://gmedia.playstation.com/is/image/SIEPDC/tiny-tinas-wonderlands-screen-01-ps4-en-18nov21",
+          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/tiny-tinas-wonderlands-screen-01-ps4-en-18nov21?$1600px$",
+          "imageAlt": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure",
+          "title": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-Shot Adventure",
+          "ps5": false
+        },
+        {
+          "image": "https://gmedia.playstation.com/is/image/SIEPDC/planet-coaster-screenshot-09-en-18jan22",
+          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/planet-coaster-screenshot-09-en-18jan22?$1600px$",
+          "imageAlt": "Planet Coaster: Console Edition",
+          "title": "Planet Coaster: Console Edition",
+          "ps5": true
+        }
+      ]
     },
     "epic": {
-      "job": false,
+      "jobFailed": false,
       "arr": []
     }
   }
