@@ -51,7 +51,20 @@
     },
     "epic": {
       "jobFailed": false,
-      "arr": []
+      "arr": [
+        {
+          "image": "https://cdn1.epicgames.com/offer/615659ff36244d258ef6c6a827e32c5d/EGS_BrothersATaleofTwoSons_StarbreezeStudiosAB_S1_2560x1440-a1455bfc980acece23a9fc9824a94e17?h=480&resize=1&w=854",
+          "imageAlt": "Brothers - A Tale of Two Sons",
+          "title": "Brothers - A Tale of Two Sons",
+          "date": "Free Now - Feb 24 at 08:00 AM"
+        },
+        {
+          "image": "https://cdn1.epicgames.com/ef361cdf19514595a8cb0945fb66962e/offer/EGS_AgorgeousindielovelettertoclassicJRPGs_DreamsUncorporatedSYCK_S1-2560x1440-8c27d8ecb673f1438c6a4b0da48ff880.jpg?h=480&resize=1&w=854",
+          "imageAlt": "Cris Tales",
+          "title": "Cris Tales",
+          "date": "Free Feb 24 - Mar 03"
+        }
+      ]
     }
   }
 }

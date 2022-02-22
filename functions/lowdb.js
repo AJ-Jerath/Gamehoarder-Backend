@@ -1,8 +1,7 @@
 const lowDb = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 
-const xbox = require('../bots/games').xbox;
-const playstation = require('../bots/games').playstation;
+const {xbox, playstation, epic} = require('../bots/games');
 
 const db = lowDb(new FileSync('./lowdb/games.json'));
 
@@ -31,6 +30,10 @@ xbox().then((res) => {
 
 playstation().then((res) => {
     db.set('games.playstation.arr', res).write()
+});
+
+epic().then((res) => {
+    db.set('games.epic.arr', res).write()
 });
 
 module.exports = db;

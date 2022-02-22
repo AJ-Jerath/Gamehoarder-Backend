@@ -57,7 +57,38 @@ const playstation = async () => {
     return results;
 };
 
+// Epic Scraper
+const epic = async () => {
+    const browser = await puppeteer.launch({ headless: false });
+    const page = await browser.newPage();
+    await page.goto('https://www.epicgames.com/store/en-US/');
+
+    await page.waitForSelector('#dieselReactWrapper');
+
+    const results = await page.$$eval('[data-component="DiscoverPage"] [data-component="WithIntersectionTracking"] [data-component="DiscoverContainerHighlighted"] section [data-component="CardGridDesktopBase"]', gameDivs => {
+       
+
+        return gameDivs.map(gameDiv => {
+            epicGames = {};
+
+            epicGames.image = gameDiv.querySelector('[data-component="Picture"] img').getAttribute('data-image');
+            epicGames.imageAlt = gameDiv.querySelector('[data-component="Picture"] img').getAttribute('alt');
+            epicGames.title = gameDiv.querySelector('[data-component="OfferTitleInfo"]').innerText;
+            epicGames.date = gameDiv.querySelector('[data-component="OfferTitleInfo"] [data-component="Message"]').innerText;
+
+            return epicGames;
+        })
+    });
+
+    browser.close();
+    
+    console.log("res: ", results);
+
+    return results;
+};
+
 module.exports = {
     xbox,
-    playstation
+    playstation,
+    epic 
 }
