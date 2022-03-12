@@ -1,8 +1,6 @@
 const puppeteer = require('puppeteer');
 const isHeadless = process.env.PRODUCTION == 'true' && true;
 
-console.log(isHeadless);
-
 // Xbox Scraper
 const xbox = async () => {
     const browser = await puppeteer.launch({ headless: isHeadless});
