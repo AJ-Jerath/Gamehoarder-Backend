@@ -1,8 +1,11 @@
 const puppeteer = require('puppeteer');
+const isHeadless = process.env.PRODUCTION == 'true' && true;
+
+console.log(isHeadless);
 
 // Xbox Scraper
 const xbox = async () => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: isHeadless});
     const page = await browser.newPage();
     await page.goto('https://www.xbox.com/en-US/live/gold#gameswithgold');
 
@@ -28,7 +31,7 @@ const xbox = async () => {
 
 // Playstation Scraper
 const playstation = async () => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: isHeadless });
     const page = await browser.newPage();
     await page.goto('https://www.playstation.com/en-us/ps-plus/this-month-on-ps-plus/');
 
@@ -58,15 +61,13 @@ const playstation = async () => {
 
 // Epic Scraper
 const epic = async () => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: isHeadless });
     const page = await browser.newPage();
     await page.goto('https://www.epicgames.com/store/en-US/');
 
     await page.waitForSelector('#dieselReactWrapper');
 
     const results = await page.$$eval('[data-component="DiscoverPage"] [data-component="WithIntersectionTracking"] [data-component="DiscoverContainerHighlighted"] section [data-component="CardGridDesktopBase"]', gameDivs => {
-       
-
         return gameDivs.map(gameDiv => {
             epicGames = {};
 
@@ -81,8 +82,6 @@ const epic = async () => {
 
     browser.close();
     
-    console.log("res: ", results);
-
     return results;
 };
 
