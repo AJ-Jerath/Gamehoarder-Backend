@@ -34,10 +34,10 @@ const playstation = async () => {
 
     await page.waitForSelector('#gdk__content');
 
-    const results = await page.$$eval('#gdk__content .cmp-container #gdk__content .section:nth-of-type(2) section div .contentgrid', divs => {
+    const results = await page.$$eval('#gdk__content .cmp-container #gdk__content .section:nth-of-type(2) section .contentgrid', divs => {
         const divOne = divs[1].querySelectorAll('.box');
-        const divTwo = divs[2].querySelector('.box');
-        const gameDivs = [...divOne, divTwo];
+        //const divTwo = divs[3].querySelectorAll('.box');
+        const gameDivs = [...divOne];
 
         return gameDivs.map(gameDiv => {
             psGames = {};
@@ -46,8 +46,7 @@ const playstation = async () => {
             psGames.imageTwo = gameDiv.querySelector('.imageblock .media-block figure picture source').getAttribute('srcset');
             psGames.imageAlt = gameDiv.querySelector('.imageblock .media-block figure picture').getAttribute('data-alt');
             psGames.title = gameDiv.querySelector('.textblock .text-block h3').innerText;
-            psGames.ps5 = gameDiv.querySelector('.textblock .text-block').innerText == 'PlayStation®5 bonus game*' ? true : false;
-
+            
             return psGames;
         })
     });
