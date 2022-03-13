@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const isHeadless = process.env.PRODUCTION === 'true' ? true : false;
+const isHeadless = process.env.PRODUCTION == 'true' ? true : false;
 
 // Xbox Scraper
 const xbox = async () => {
