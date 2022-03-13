@@ -1,8 +1,6 @@
 version: '3'
 services:
   node:
-    build: 
-      context: .
-      dockerfile: ./docker/Dockerfile
+    build: .
     ports:
       - "8080:8080"
