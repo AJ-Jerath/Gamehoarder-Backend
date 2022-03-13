@@ -1,9 +1,13 @@
 const puppeteer = require('puppeteer');
-const isHeadless = process.env.PRODUCTION == 'true' && true;
+const isHeadless = process.env.PRODUCTION === 'true' ? true : false;
 
 // Xbox Scraper
 const xbox = async () => {
-    const browser = await puppeteer.launch({ headless: isHeadless});
+    const browser = await puppeteer.launch({ 
+        headless: true,
+    
+    });
+
     const page = await browser.newPage();
     await page.goto('https://www.xbox.com/en-US/live/gold#gameswithgold');
 
@@ -29,7 +33,11 @@ const xbox = async () => {
 
 // Playstation Scraper
 const playstation = async () => {
-    const browser = await puppeteer.launch({ headless: isHeadless });
+    const browser = await puppeteer.launch({ 
+        headless: true,
+        
+    });
+
     const page = await browser.newPage();
     await page.goto('https://www.playstation.com/en-us/ps-plus/this-month-on-ps-plus/');
 
@@ -59,7 +67,11 @@ const playstation = async () => {
 
 // Epic Scraper
 const epic = async () => {
-    const browser = await puppeteer.launch({ headless: isHeadless });
+    const browser = await puppeteer.launch({ 
+        headless: true,
+        
+    });
+
     const page = await browser.newPage();
     await page.goto('https://www.epicgames.com/store/en-US/');
 
