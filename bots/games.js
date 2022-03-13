@@ -5,7 +5,6 @@ const isHeadless = process.env.PRODUCTION === 'true' ? true : false;
 const xbox = async () => {
     const browser = await puppeteer.launch({ 
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
     const page = await browser.newPage();
@@ -35,7 +34,6 @@ const xbox = async () => {
 const playstation = async () => {
     const browser = await puppeteer.launch({ 
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
     const page = await browser.newPage();
@@ -69,7 +67,6 @@ const playstation = async () => {
 const epic = async () => {
     const browser = await puppeteer.launch({ 
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
     const page = await browser.newPage();
