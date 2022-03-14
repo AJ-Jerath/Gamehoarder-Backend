@@ -1,6 +1,8 @@
 FROM node:12
 
+# env variables
 ENV PORT=8080
+
 EXPOSE 8080
 RUN apt-get update
 

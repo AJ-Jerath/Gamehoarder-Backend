@@ -14,26 +14,26 @@ cron.schedule('* * * * *', () => {
     });
 });
 
-// cron.schedule('* * * * *', () => {
-//     playstation().then((res) => {
-//         db.set('games.playstation.arr', res).write()
+cron.schedule('30 * * * * *', () => {
+    playstation().then((res) => {
+        db.set('games.playstation.arr', res).write()
 
-//         console.log('Playstation cron successfull');
-//     }).catch((err) => {
-//         db.set('games.playstation.jobFailed', true).write();
+        console.log('Playstation cron successfull');
+    }).catch((err) => {
+        db.set('games.playstation.jobFailed', true).write();
 
-//         console.log(`Playstation cron error ${err}`)
-//     });
-// });
+        console.log(`Playstation cron error ${err}`)
+    });
+});
 
-// cron.schedule('* * * * *', () => {
-//     epic().then((res) => {
-//         db.set('games.epic.arr', res).write();
+cron.schedule('50 * * * * *', () => {
+    epic().then((res) => {
+        db.set('games.epic.arr', res).write();
 
-//         console.log('Epic cron successfull');
-//     }).catch((err) => {
-//         db.set('games.epic.jobFailed', true).write()
+        console.log('Epic cron successfull');
+    }).catch((err) => {
+        db.set('games.epic.jobFailed', true).write()
 
-//         console.log(`Epic cron error ${err}`)
-//     });
-// });
+        console.log(`Epic cron error ${err}`)
+    });
+});
