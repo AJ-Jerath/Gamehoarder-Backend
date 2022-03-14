@@ -4,7 +4,12 @@ const puppeteer = require('puppeteer');
 const xbox = async () => {
     const browser = await puppeteer.launch({ 
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--ignore-certificate-errors', '--disable-dev-shm-usage'],
+        args: [
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--disable-setuid-sandbox",
+            "--no-sandbox",
+        ],
         ignoreHTTPSErrors: true,
         dumpio: false
     });
@@ -36,7 +41,12 @@ const xbox = async () => {
 const playstation = async () => {
     const browser = await puppeteer.launch({ 
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--ignore-certificate-errors', '--disable-dev-shm-usage'],
+        args: [
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--disable-setuid-sandbox",
+            "--no-sandbox",
+        ],
         ignoreHTTPSErrors: true,
         dumpio: false
     });
@@ -72,7 +82,12 @@ const playstation = async () => {
 const epic = async () => {
     const browser = await puppeteer.launch({ 
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--ignore-certificate-errors', '--disable-dev-shm-usage'],
+        args: [
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--disable-setuid-sandbox",
+            "--no-sandbox",
+        ],
         ignoreHTTPSErrors: true,
         dumpio: false
     });

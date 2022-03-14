@@ -23,4 +23,7 @@ RUN mkdir -p /usr/src/app/views
 # install the necessary packages
 RUN npm install
 
+# give permissions
+RUN chmod -R o+rwx node_modules/puppeteer/.local-chromium
+
 CMD npm run start
