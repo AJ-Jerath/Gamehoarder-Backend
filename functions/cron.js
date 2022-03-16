@@ -2,38 +2,43 @@ const cron = require('node-cron');
 const db = require('./lowdb');
 const {xbox, playstation, epic} = require('../bots/games');
 
-cron.schedule('* * * * *', () => {
-    xbox().then((res) => {
+cron.schedule('30 * * * * *', async () => {
+    // Xbox
+    try {
+        const res = await xbox();
+
         db.set('games.xbox.arr', res).write();
 
         console.log('Xbox cron successfull');
-    }).catch((err) => {
+    } catch(err) {
         db.set('games.xbox.jobFailed', true).write()
 
         console.log(`Xbox cron error ${err}`)
-    });
-});
+    }
+   
+    // Playstation
+    try {
+        const res = await playstation();
 
-cron.schedule('30 * * * * *', () => {
-    playstation().then((res) => {
-        db.set('games.playstation.arr', res).write()
+        db.set('games.xbox.arr', res).write();
 
         console.log('Playstation cron successfull');
-    }).catch((err) => {
+    } catch(err) {
         db.set('games.playstation.jobFailed', true).write();
 
         console.log(`Playstation cron error ${err}`)
-    });
-});
+    }
 
-cron.schedule('50 * * * * *', () => {
-    epic().then((res) => {
+    // Epic
+    try {
+        const res = await epic();
+
         db.set('games.epic.arr', res).write();
 
         console.log('Epic cron successfull');
-    }).catch((err) => {
+    } catch(err) {
         db.set('games.epic.jobFailed', true).write()
 
         console.log(`Epic cron error ${err}`)
-    });
+    }
 });
