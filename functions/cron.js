@@ -20,7 +20,7 @@ cron.schedule('0 * * * *', async () => {
     try {
         const res = await playstation();
 
-        db.set('games.xbox.arr', res).write();
+        db.set('games.playstation.arr', res).write();
 
         console.log('Playstation cron successfull');
     } catch(err) {
