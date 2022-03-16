@@ -16,7 +16,7 @@ const xbox = async () => {
 
     const page = await browser.newPage();
     await page.goto('https://www.xbox.com/en-US/live/gold#gameswithgold', {
-        waitUntil: 'load', 
+        waitUntil: 'networkidle2', 
         timeout: 0,
     });
 
@@ -56,7 +56,7 @@ const playstation = async () => {
 
     const page = await browser.newPage();
     await page.goto('https://www.playstation.com/en-us/ps-plus/this-month-on-ps-plus/', {
-        waitUntil: 'load', 
+        waitUntil: 'networkidle2', 
         timeout: 0, 
     });
 
@@ -100,7 +100,7 @@ const epic = async () => {
 
     const page = await browser.newPage();
     await page.goto('https://www.epicgames.com/store/en-US/', { 
-        waitUntil: 'load', 
+        waitUntil: 'networkidle2', 
         timeout: 0 ,
     });
 
