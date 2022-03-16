@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const db = require('./lowdb');
 const {xbox, playstation, epic} = require('../bots/games');
 
-cron.schedule('30 * * * * *', async () => {
+cron.schedule('0 * * * *', async () => {
     // Xbox
     try {
         const res = await xbox();
