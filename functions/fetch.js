@@ -43,6 +43,16 @@ const epic = async () => {
    return array;
 }
 
+const playstation = async () => {
+    const res = await fetch('https://www.playstation.com/bin/social/data/instagram?fields=business_discovery.username(playstation){media{username,%20caption,%20media_url,%20media_type,%20permalink,%20like_count,%20id,%20timestamp},%20media_count}');
+    
+    const data = await res.json();
+
+    console.log(data);
+}
+
+playstation();
+
 module.exports = {
     epic,
 }
