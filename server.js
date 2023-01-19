@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 require('./functions/cron');
+require('./functions/fetch');
 
 dotenv.config();
 const port = process.env.PORT || 5000;
