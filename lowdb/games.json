@@ -4,22 +4,16 @@
       "jobFailed": false,
       "arr": [
         {
-          "image": "https://store-images.s-microsoft.com/image/apps.36524.14392462620883000.4b9898a4-26f5-46c3-8226-04d724cc52eb.1d7ca962-e578-4327-b738-a4c2c4909906",
-          "imageAlt": "Aerial_Knight's Never Yield boxshot",
-          "title": "Aerial_Knight's Never Yield",
-          "date": "2/16 – 3/15"
+          "image": "https://store-images.s-microsoft.com/image/apps.52829.14343891382902973.f81e0f0d-a6e4-41bf-9925-b4263039c683.21df4d64-027b-4ef8-af07-704c72dcd3b1",
+          "imageAlt": "Iris Fall boxshot",
+          "title": "Iris Fall",
+          "date": "1/1 – 1/31"
         },
         {
-          "image": "https://store-images.s-microsoft.com/image/apps.65239.63137510087334682.8f8bcc80-302f-4fb5-b47f-069311f96e0e.a519ba3f-070a-49c8-ad83-1d41ade3a04a",
-          "imageAlt": "The Flame in the Flood boxshot",
-          "title": "The Flame in the Flood",
-          "date": "3/1 – 3/31"
-        },
-        {
-          "image": "https://store-images.s-microsoft.com/image/apps.23261.14150478192188888.945cef7d-b3d5-45d0-a765-2b5c7072b450.6862baf4-782c-41c9-aefc-76562d97bb1c",
-          "imageAlt": "Sacred 2 Fallen Angel boxshot",
-          "title": "Sacred 2 Fallen Angel",
-          "date": "3/1 – 3/15"
+          "image": "https://store-images.s-microsoft.com/image/apps.44371.14295881571957591.2f137eac-8f80-40d3-86ae-725eb9aeebeb.974ab0fc-5f89-49d8-939e-b6f1ee99fe1c",
+          "imageAlt": "Autonauts boxshot",
+          "title": "Autonauts",
+          "date": "1/16 – 2/15"
         }
       ]
     },
@@ -50,16 +44,67 @@
       "jobFailed": false,
       "arr": [
         {
-          "image": "https://cdn1.epicgames.com/6009be9994c2409099588cde6f3a5ed0/offer/EGS_CitiesSkylines_ColossalOrder_S3-2560x1440-14df106873c918591e49bd9604841e83.jpg?h=480&resize=1&w=854",
-          "imageAlt": "Cities: Skylines",
-          "title": "Cities: Skylines",
-          "date": "Free Now - Mar 17 at 08:00 AM"
+          "title": "Adios",
+          "imageAlt": "Adios",
+          "date": {
+            "startDate": "2023-01-26T16:00:00.000Z",
+            "endDate": "2023-02-02T16:00:00.000Z"
+          },
+          "keyImages": [
+            {
+              "type": "OfferImageWide",
+              "url": "https://cdn1.epicgames.com/spt/e8e605d4-bd25-48d7-b99c-c8df348c9d81/adios-offer-41329995.jpg"
+            },
+            {
+              "type": "OfferImageTall",
+              "url": "https://cdn1.epicgames.com/spt/0e7cbbb0-a281-4c00-8538-7eb946666d84/download-adios-offer-3bab1685.jpg"
+            },
+            {
+              "type": "Thumbnail",
+              "url": "https://cdn1.epicgames.com/spt/0e7cbbb0-a281-4c00-8538-7eb946666d84/download-adios-offer-3bab1685.jpg"
+            }
+          ]
         },
         {
-          "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_InSoundMind_WeCreateStuff_S3_2560x1440-78d2b96f4772d724e6f003a1e88f4844?h=480&resize=1&w=854",
-          "imageAlt": "In Sound Mind",
-          "title": "In Sound Mind",
-          "date": "Free Mar 17 - Mar 24"
+          "title": "Epistory - Typing Chronicles",
+          "imageAlt": "Epistory - Typing Chronicles",
+          "date": {
+            "startDate": "2023-01-19T16:00:00.000Z",
+            "endDate": "2023-01-26T16:00:00.000Z"
+          },
+          "keyImages": [
+            {
+              "type": "OfferImageWide",
+              "url": "https://cdn1.epicgames.com/spt-assets/2fe270709f944fc398851454cf476f95/epistory-typing-adventure-1t9zx.jpg"
+            },
+            {
+              "type": "OfferImageTall",
+              "url": "https://cdn1.epicgames.com/spt-assets/2fe270709f944fc398851454cf476f95/epistory--typing-chronicles-19b5z.png"
+            },
+            {
+              "type": "Thumbnail",
+              "url": "https://cdn1.epicgames.com/spt-assets/2fe270709f944fc398851454cf476f95/epistory--typing-chronicles-19b5z.png"
+            }
+          ]
+        },
+        {
+          "title": "Dishonored - Definitive Edition",
+          "imageAlt": "Dishonored - Definitive Edition",
+          "date": null,
+          "keyImages": [
+            {
+              "type": "VaultClosed",
+              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-wrapped-desktop-carousel-image_1920x1080-ebecfa7c79f02a9de5bca79560bee953"
+            },
+            {
+              "type": "DieselStoreFrontWide",
+              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-Unwrapped-desktop-carousel-image1_1920x1080-1992edb42bb8554ddeb14d430ba3f858"
+            },
+            {
+              "type": "DieselStoreFrontTall",
+              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/DAY15-carousel-mobile-unwrapped-image1_1200x1600-9716d77667d2a82931c55a4e4130989e"
+            }
+          ]
         }
       ]
     }

@@ -6,22 +6,43 @@ const epic = async () => {
    const data = await res.json();
    const games = data.data.Catalog.searchStore.elements;
 
-   games.map((game) => {
+   const array = games.map((game) => {
 
-    const {title, } = game;
+        const {title, keyImages, promotions} = game;
+        let date = null;
 
-    const object = {
-        image: "https://gmedia.playstation.com/is/image/SIEPDC/ark-survival-evolved-screenshot-01-en-17feb22",
-        imageTwo: "https://gmedia.playstation.com/is/image/SIEPDC/ark-survival-evolved-screenshot-01-en-17feb22?$1600px$",
-        imageAlt: "ARK survival evolved screenshot",
-        title,
-    }
+        if(promotions) {
+            let dates = null
 
-    console.log(game);
-    console.log(object);
+            if(promotions.promotionalOffers.length > 0) {
+                dates = promotions.promotionalOffers[0].promotionalOffers[0]
+            } 
+            
+            if(promotions.upcomingPromotionalOffers.length > 0) {
+                dates = promotions.upcomingPromotionalOffers[0].promotionalOffers[0]
+            }
+
+            if (dates) {
+                const {startDate, endDate} = dates;
+
+                date = {
+                    startDate, 
+                    endDate
+                }
+            }
+        }
+
+        return {
+            title,
+            imageAlt: title,
+            date,
+            keyImages,
+        }
    })
 
-   return games;
+   return array;
 }
 
-epic();
+module.exports = {
+    epic,
+}
