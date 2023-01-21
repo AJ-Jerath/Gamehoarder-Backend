@@ -1,13 +1,15 @@
 const cron = require('node-cron');
 const db = require('./lowdb');
-const {xbox, playstation, epic} = require('../bots/games');
+const { epic } = require('./fetch');
+const { xbox, playstation } = require('../bots/games');
 
-cron.schedule('0 * * * *', async () => {
+cron.schedule('*/2 * * * *', async () => {
     // Xbox
     try {
         const res = await xbox();
 
         db.set('games.xbox.arr', res).write();
+        db.set('games.xbox.jobFailed', false).write()
 
         console.log('Xbox cron successfull');
     } catch(err) {
@@ -21,6 +23,7 @@ cron.schedule('0 * * * *', async () => {
         const res = await playstation();
 
         db.set('games.playstation.arr', res).write();
+        db.set('games.playstation.jobFailed', false).write();
 
         console.log('Playstation cron successfull');
     } catch(err) {
@@ -34,6 +37,7 @@ cron.schedule('0 * * * *', async () => {
         const res = await epic();
 
         db.set('games.epic.arr', res).write();
+        db.set('games.epic.jobFailed', false).write()
 
         console.log('Epic cron successfull');
     } catch(err) {
