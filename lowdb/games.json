@@ -21,28 +21,51 @@
       "jobFailed": false,
       "arr": [
         {
-          "image": "https://gmedia.playstation.com/is/image/SIEPDC/ark-survival-evolved-screenshot-01-en-17feb22",
-          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/ark-survival-evolved-screenshot-01-en-17feb22?$1600px$",
-          "imageAlt": "ARK survival evolved screenshot",
-          "title": "ARK: Survival Evolved"
+          "image": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-screenshot-06-ps4-en-01nov19",
+          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-screenshot-06-ps4-en-01nov19?$1600px$",
+          "imageAlt": "Star Wars Jedi fallen order screenshot of character posing with a lightsaber.",
+          "title": "STAR WARS Jedi: Fallen Order™"
         },
         {
-          "image": "https://gmedia.playstation.com/is/image/SIEPDC/team-sonic-racing-screenshot-01-en-17feb22",
-          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/team-sonic-racing-screenshot-01-en-17feb22?$1600px$",
-          "imageAlt": "Team Sonic Racing screenshot",
-          "title": "Team Sonic Racing"
+          "image": "https://gmedia.playstation.com/is/image/SIEPDC/fallout-76-the-pitt-screenshot-03-en-8sep22",
+          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/fallout-76-the-pitt-screenshot-03-en-8sep22?$1600px$",
+          "imageAlt": "Fallout 76 screenshot of an airplane",
+          "title": "Fallout 76"
         },
         {
-          "image": "https://gmedia.playstation.com/is/image/SIEPDC/ghostrunner-key-art-01-en-17feb22",
-          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/ghostrunner-key-art-01-en-17feb22?$1600px$",
-          "imageAlt": "Ghostrunner key art",
-          "title": "Ghostrunner*"
+          "image": "https://gmedia.playstation.com/is/image/SIEPDC/axiom-verge-2-screen-05-ps4-ps5-en-29jul21",
+          "imageTwo": "https://gmedia.playstation.com/is/image/SIEPDC/axiom-verge-2-screen-05-ps4-ps5-en-29jul21?$1600px$",
+          "imageAlt": "Axiom verge 2 screenshot of gameplay",
+          "title": "Axiom Verge 2"
         }
       ]
     },
     "epic": {
       "jobFailed": false,
       "arr": [
+        {
+          "title": "Borderlands 3 Season Pass",
+          "imageAlt": "Borderlands 3 Season Pass",
+          "date": null,
+          "keyImages": [
+            {
+              "type": "OfferImageWide",
+              "url": "https://cdn1.epicgames.com/offer/catnip/Diesel_productv2_borderlands-3_season-pass_BL3_SEASONPASS_Hero-3840x2160-4411e63a005a43811a2bc516ae7ec584598fd4aa-3840x2160-b8988ebb0f3d9159671e8968af991f30_3840x2160-b8988ebb0f3d9159671e8968af991f30"
+            },
+            {
+              "type": "OfferImageTall",
+              "url": "https://cdn1.epicgames.com/offer/catnip/2KGMKT_BL3_Season_Pass_EGS_1200x1600_1200x1600-a7438a079c5576d328a74b9121278075"
+            },
+            {
+              "type": "CodeRedemption_340x440",
+              "url": "https://cdn1.epicgames.com/offer/catnip/2KGMKT_BL3_Season_Pass_EGS_1200x1600_1200x1600-a7438a079c5576d328a74b9121278075"
+            },
+            {
+              "type": "Thumbnail",
+              "url": "https://cdn1.epicgames.com/offer/catnip/2KGMKT_BL3_Season_Pass_EGS_1200x1600_1200x1600-a7438a079c5576d328a74b9121278075"
+            }
+          ]
+        },
         {
           "title": "Adios",
           "imageAlt": "Adios",
@@ -103,6 +126,28 @@
             {
               "type": "DieselStoreFrontTall",
               "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/DAY15-carousel-mobile-unwrapped-image1_1200x1600-9716d77667d2a82931c55a4e4130989e"
+            }
+          ]
+        },
+        {
+          "title": "Hell is Others",
+          "imageAlt": "Hell is Others",
+          "date": {
+            "startDate": "2023-01-26T16:00:00.000Z",
+            "endDate": "2023-02-02T16:00:00.000Z"
+          },
+          "keyImages": [
+            {
+              "type": "OfferImageWide",
+              "url": "https://cdn1.epicgames.com/spt-assets/0de2d0d8870f457eaf7c6bf8c64f7f9e/hell-is-others-86xt2.jpg"
+            },
+            {
+              "type": "OfferImageTall",
+              "url": "https://cdn1.epicgames.com/spt-assets/0de2d0d8870f457eaf7c6bf8c64f7f9e/hell-is-others-1ra3i.jpg"
+            },
+            {
+              "type": "Thumbnail",
+              "url": "https://cdn1.epicgames.com/spt-assets/0de2d0d8870f457eaf7c6bf8c64f7f9e/hell-is-others-1ra3i.jpg"
             }
           ]
         }

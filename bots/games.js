@@ -41,91 +41,47 @@ const xbox = async () => {
 };
 
 // Playstation Scraper
-// const playstation = async () => {
-//     const browser = await puppeteer.launch({ 
-//         headless: true,
-//         args: [
-//             "--disable-gpu",
-//             "--disable-dev-shm-usage",
-//             "--disable-setuid-sandbox",
-//             "--no-sandbox",
-//         ],
-//         ignoreHTTPSErrors: true,
-//         dumpio: false
-//     });
+const playstation = async () => {
+    const browser = await puppeteer.launch({ 
+        headless: true,
+        args: [
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--disable-setuid-sandbox",
+            "--no-sandbox",
+        ],
+        ignoreHTTPSErrors: true,
+        dumpio: false
+    });
 
-//     const page = await browser.newPage();
-//     await page.goto('https://www.playstation.com/en-us/ps-plus/this-month-on-ps-plus/', {
-//         waitUntil: 'networkidle2', 
-//         timeout: 0, 
-//     });
+    const page = await browser.newPage();
+    await page.goto('https://www.playstation.com/en-us/ps-plus/whats-new/', {
+        waitUntil: 'networkidle2', 
+        timeout: 0, 
+    });
 
-//     await page.waitForSelector('#gdk__content');
+    await page.waitForSelector('#gdk__content');
 
-//     const results = await page.$$eval('#gdk__content .cmp-container #gdk__content .section:nth-of-type(2) section .contentgrid', divs => {
-//         const divOne = divs[1].querySelectorAll('.box');
-//         //const divTwo = divs[3].querySelectorAll('.box');
-//         const gameDivs = [...divOne];
+    const results = await page.$eval('#gdk__content div:nth-of-type(8) .gpdc-section > div .contentgrid:nth-of-type(2) .cmp-container > div .content-grid', gameDivs => {
+        return [...gameDivs.querySelectorAll(".box")].map(gameDiv => {
+            psGames = {};
 
-//         return gameDivs.map(gameDiv => {
-//             psGames = {};
-
-//             psGames.image = gameDiv.querySelector('.imageblock .media-block').getAttribute('data-src');
-//             psGames.imageTwo = gameDiv.querySelector('.imageblock .media-block figure picture source').getAttribute('srcset');
-//             psGames.imageAlt = gameDiv.querySelector('.imageblock .media-block figure picture').getAttribute('data-alt');
-//             psGames.title = gameDiv.querySelector('.textblock .text-block h3').innerText;
+            psGames.image = gameDiv.querySelector('.imageblock .media-block').getAttribute('data-src');
+            psGames.imageTwo = gameDiv.querySelector('.imageblock .media-block figure picture source').getAttribute('srcset');
+            psGames.imageAlt = gameDiv.querySelector('.imageblock .media-block figure picture').getAttribute('data-alt');
+            psGames.title = gameDiv.querySelector('.body-text-block .txt-block__paragraph h3').innerText;
             
-//             return psGames;
-//         })
-//     });
+            return psGames;
+        })
 
-//     browser.close();
-    
-//     return results;
-// };
+    });
 
-// Epic Scraper
-// const epic = async () => {
-//     console.log("fired epic games");
+    browser.close();
 
-//     const browser = await puppeteer.launch({ 
-//         headless: true,
-//         args: [
-//             "--disable-gpu",
-//             "--disable-dev-shm-usage",
-//             "--disable-setuid-sandbox",
-//             "--no-sandbox",
-//         ],
-//         ignoreHTTPSErrors: true,
-//         dumpio: false
-//     });
-
-//     const page = await browser.newPage();
-//     await page.goto('https://www.epicgames.com/store/en-US/', { 
-//         waitUntil: 'networkidle2', 
-//         timeout: 0 ,
-//     });
-
-//     await page.waitForSelector('body');
-
-//     const results = await page.$$eval('.css-1knv3fd', gameDivs => {
-//         return gameDivs.map(gameDiv => {
-//             epicGames = {};
-
-//             epicGames.image = gameDiv.querySelector('[data-component="Picture"] img').getAttribute('data-image');
-//             epicGames.imageAlt = gameDiv.querySelector('[data-component="Picture"] img').getAttribute('alt');
-//             epicGames.title = gameDiv.querySelector('[data-component="OfferTitleInfo"]').innerText;
-//             epicGames.date = gameDiv.querySelector('[data-component="OfferTitleInfo"] [data-component="Message"]').innerText;
-
-//             return epicGames;
-//         })
-//     });
-
-//     browser.close();
-    
-//     return results;
-// };
+    return results;
+};
 
 module.exports = {
     xbox,
+    playstation
 }

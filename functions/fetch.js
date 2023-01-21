@@ -43,15 +43,17 @@ const epic = async () => {
    return array;
 }
 
-const playstation = async () => {
-    const res = await fetch('https://www.playstation.com/bin/social/data/instagram?fields=business_discovery.username(playstation){media{username,%20caption,%20media_url,%20media_type,%20permalink,%20like_count,%20id,%20timestamp},%20media_count}');
-    
-    const data = await res.json();
+// const url = 'https://www.playstation.com/bin/social/data/instagram?fields=business_discovery.username(playstation){media{username,%20caption,%20media_url,%20media_type,%20permalink,%20like_count,%20id,%20timestamp},%20media_count}';
 
-    console.log(data);
-}
+// const playstation = async () => {
+//     const res = await fetch(url)
 
-playstation();
+//     const data = await res;
+
+//     console.log(data.business_discovery.media.data);
+// }
+
+// playstation();
 
 module.exports = {
     epic,
