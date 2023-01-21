@@ -3,7 +3,7 @@ const db = require('./lowdb');
 const { epic } = require('./fetch');
 const { xbox, playstation } = require('../bots/games');
 
-cron.schedule('*/2 * * * *', async () => {
+cron.schedule('0 */6 * * *', async () => {
     // Xbox
     try {
         const res = await xbox();
