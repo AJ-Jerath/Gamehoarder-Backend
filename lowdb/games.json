@@ -46,7 +46,10 @@
         {
           "title": "Borderlands 3 Season Pass",
           "imageAlt": "Borderlands 3 Season Pass",
-          "date": null,
+          "date": {
+            "startDate": "2023-01-26T16:00:00.000Z",
+            "endDate": "2023-02-09T16:00:00.000Z"
+          },
           "keyImages": [
             {
               "type": "OfferImageWide",
@@ -111,25 +114,6 @@
           ]
         },
         {
-          "title": "Dishonored - Definitive Edition",
-          "imageAlt": "Dishonored - Definitive Edition",
-          "date": null,
-          "keyImages": [
-            {
-              "type": "VaultClosed",
-              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-wrapped-desktop-carousel-image_1920x1080-ebecfa7c79f02a9de5bca79560bee953"
-            },
-            {
-              "type": "DieselStoreFrontWide",
-              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-Unwrapped-desktop-carousel-image1_1920x1080-1992edb42bb8554ddeb14d430ba3f858"
-            },
-            {
-              "type": "DieselStoreFrontTall",
-              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/DAY15-carousel-mobile-unwrapped-image1_1200x1600-9716d77667d2a82931c55a4e4130989e"
-            }
-          ]
-        },
-        {
           "title": "Hell is Others",
           "imageAlt": "Hell is Others",
           "date": {
@@ -148,6 +132,25 @@
             {
               "type": "Thumbnail",
               "url": "https://cdn1.epicgames.com/spt-assets/0de2d0d8870f457eaf7c6bf8c64f7f9e/hell-is-others-1ra3i.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Dishonored - Definitive Edition",
+          "imageAlt": "Dishonored - Definitive Edition",
+          "date": null,
+          "keyImages": [
+            {
+              "type": "VaultClosed",
+              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-wrapped-desktop-carousel-image_1920x1080-ebecfa7c79f02a9de5bca79560bee953"
+            },
+            {
+              "type": "DieselStoreFrontWide",
+              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-Unwrapped-desktop-carousel-image1_1920x1080-1992edb42bb8554ddeb14d430ba3f858"
+            },
+            {
+              "type": "DieselStoreFrontTall",
+              "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/DAY15-carousel-mobile-unwrapped-image1_1200x1600-9716d77667d2a82931c55a4e4130989e"
             }
           ]
         }

@@ -1,7 +1,7 @@
 const cron = require('node-cron');
 const db = require('./lowdb');
-const { epic } = require('./fetch');
-const { xbox, playstation } = require('../bots/games');
+const epic = require('./fetch/epic');
+const { xbox, playstation } = require('./bots/games');
 
 cron.schedule('0 */6 * * *', async () => {
     // Xbox

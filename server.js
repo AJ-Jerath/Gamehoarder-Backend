@@ -1,16 +1,18 @@
 const express = require('express');
 const app = express();
-const dotenv = require('dotenv');
-require('./functions/fetch');
+const { port, isProduction } = require('./config/env')
+const routes = require('./routes/index');
 
-dotenv.config();
 
-const baseUrl = '/v1';
-const port = process.env.PORT || 5000;
-const isProduction = process.env.PORT === 5000 ? 'develop' : 'production';
+const test = async () => {
+    const data = await require('./services/fetch/comicbookmovie')();
+    
+   console.log(data);
+}
 
+test();
 // Routes
-const games = require('./routes/games');
-app.use(baseUrl , games);
+app.use(routes)
 
+// Intilize
 app.listen(port, console.log(`App stared on port ${port} and is in ${isProduction} mode`));

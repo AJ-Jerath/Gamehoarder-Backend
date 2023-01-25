@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const games = require('./games');
 
-const getGames = require('../controlers/games')
+const baseUrl = '/v1';
 
-// Games
-router.get('/games', getGames);
+// Routes
+router.use(baseUrl , games);
 
 module.exports = router;

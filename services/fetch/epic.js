@@ -8,7 +8,6 @@ const epic = async () => {
         const games = data.data.Catalog.searchStore.elements;
 
         const array = games.map((game) => {
-
                 const {title, keyImages, promotions} = game;
                 let date = null;
 
@@ -47,22 +46,4 @@ const epic = async () => {
     }
 }
 
-const comicbookmovie = async () => {
-    try {
-        const url = 'https://api.grow.me/sites/8ff11b47-a05e-4b31-b687-da48f8d8d483/search-landing-page'
-        const res = await fetch(url)
-        const data = await res.json();
-
-        console.log(data.latestPages.edges);
-        return data;
-    } catch (err) {
-        console.log("eerr", err);
-        return err;
-    }
-}
-
-comicbookmovie();
-
-module.exports = {
-    epic,
-}
+module.exports = epic;
