@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
+require('./functions/fetch');
 
 dotenv.config();
 
