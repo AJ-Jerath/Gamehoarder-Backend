@@ -1,16 +1,12 @@
 const express = require('express');
 const app = express();
-const { port, isProduction } = require('./config/env')
+const connectMongoDB = require('./config/mongoose');
 const routes = require('./routes/index');
+const { port, isProduction } = require('./config/env')
 
+// Intilize DB
+connectMongoDB();
 
-const test = async () => {
-    const data = await require('./services/fetch/comicbookmovie')();
-    
-   console.log(data);
-}
-
-test();
 // Routes
 app.use(routes)
 
