@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 const connectMongoDB = require('./config/mongoose');
-const routes = require('./routes/index');
 const { port, isProduction } = require('./config/env')
+
+// Imports
+const routes = require('./routes');
+const services = require('./services');
 
 // Intilize DB
 connectMongoDB();
