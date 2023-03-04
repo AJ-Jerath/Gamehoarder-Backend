@@ -5,10 +5,14 @@ const steam = async () => {
     const res = await fetch(url);
     const data = await res.json();
 
-    return data.events.map((article) => {
+    return data.events.flatMap((article) => {
         const clanId = article.announcement_body.clanid;
         const titleImgID = JSON.parse(article.jsondata).localized_title_image[0];
         const imgUrl = `https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/${clanId}/${titleImgID}`
+
+        if (!titleImgID) {
+            return [];
+        }
 
         return {
             imgUrl,
@@ -17,9 +21,5 @@ const steam = async () => {
         }
     })
 }
-
-steam().then((data) => {
-    console.log(data);
-})
 
 module.exports = steam;
