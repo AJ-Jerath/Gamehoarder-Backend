@@ -4,21 +4,27 @@
       "jobFailed": false,
       "arr": [
         {
-          "image": "https://store-images.s-microsoft.com/image/apps.44371.14295881571957591.2f137eac-8f80-40d3-86ae-725eb9aeebeb.974ab0fc-5f89-49d8-939e-b6f1ee99fe1c",
-          "imageAlt": "Autonauts boxshot",
-          "title": "Autonauts",
-          "date": "1/16 – 2/15"
+          "image": "https://store-images.s-microsoft.com/image/apps.4794.14031602496681620.05365ff8-0ee4-4e5e-b2cd-e1f9400ad73e.c5914c2b-0b84-49c5-ab24-d338aedd80e7",
+          "imageAlt": "Guts 'N Goals boxshot",
+          "title": "Guts 'N Goals",
+          "date": "2/16 – 3/15"
         },
         {
-          "image": "https://store-images.s-microsoft.com/image/apps.16651.67711513064732812.145475d0-7ca9-46cd-80c8-14a5857a18e2.cd24e81c-f3aa-449d-a3ab-7127f9227ba3",
-          "imageAlt": "For the King boxshot",
-          "title": "For the King",
-          "date": "2/1 – 2/28"
+          "image": "https://store-images.s-microsoft.com/image/apps.26691.14516385797305495.34b1d078-3ffb-49a5-bd8d-967c97f3be70.68a14ce9-3c4d-4cff-8661-89b3e213f674",
+          "imageAlt": "Trüberbrook boxshot",
+          "title": "Trüberbrook",
+          "date": "3/1 – 3/31"
+        },
+        {
+          "image": "https://store-images.s-microsoft.com/image/apps.7863.71482278876779955.94140efe-01b3-4b54-823a-42260614601e.840b7d00-9413-4a73-b3cb-adfda5c7004a",
+          "imageAlt": "Sudden Strike 4 - Complete Collection boxshot",
+          "title": "Sudden Strike 4 - Complete Collection",
+          "date": "3/1 – 3/31"
         }
       ]
     },
     "playstation": {
-      "jobFailed": false,
+      "jobFailed": true,
       "arr": [
         {
           "image": "https://gmedia.playstation.com/is/image/SIEPDC/evil-dead-the-game-screenshot-04-en-28apr22",
@@ -53,8 +59,8 @@
           "title": "Borderlands 3 Season Pass",
           "imageAlt": "Borderlands 3 Season Pass",
           "date": {
-            "startDate": "2023-01-26T16:00:00.000Z",
-            "endDate": "2023-02-09T16:00:00.000Z"
+            "startDate": "2023-03-09T16:00:00.000Z",
+            "endDate": "2023-03-16T16:00:00.000Z"
           },
           "keyImages": [
             {
@@ -76,68 +82,58 @@
           ]
         },
         {
-          "title": "City of Gangsters",
-          "imageAlt": "City of Gangsters",
+          "title": "Call of the Sea",
+          "imageAlt": "Call of the Sea",
           "date": {
-            "startDate": "2023-02-02T16:00:00.000Z",
-            "endDate": "2023-02-09T16:00:00.000Z"
+            "startDate": "2023-03-09T16:00:00.000Z",
+            "endDate": "2023-03-16T16:00:00.000Z"
           },
           "keyImages": [
             {
+              "type": "DieselStoreFrontWide",
+              "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CalloftheSea_OutoftheBlue_S1_2560x1440-204699c6410deef9c18be0ee392f8335"
+            },
+            {
+              "type": "DieselStoreFrontTall",
+              "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CalloftheSea_OutoftheBlue_S2_1200x1600-db63acf0c479c185e0ef8f8e73c8f0d8"
+            },
+            {
               "type": "OfferImageWide",
-              "url": "https://cdn1.epicgames.com/spt-assets/148df842b2b14082be6b004f59a2765b/city-of-gangsters-offer-16sbj.jpg"
+              "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CalloftheSea_OutoftheBlue_S5_1920x1080-7b22dfebdd9fcdde6e526c5dc4c16eb1"
             },
             {
               "type": "OfferImageTall",
-              "url": "https://cdn1.epicgames.com/spt-assets/148df842b2b14082be6b004f59a2765b/download-city-of-gangsters-offer-5jbgv.jpg"
+              "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CalloftheSea_OutoftheBlue_S2_1200x1600-db63acf0c479c185e0ef8f8e73c8f0d8"
+            },
+            {
+              "type": "CodeRedemption_340x440",
+              "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CalloftheSea_OutoftheBlue_S2_1200x1600-db63acf0c479c185e0ef8f8e73c8f0d8"
             },
             {
               "type": "Thumbnail",
-              "url": "https://cdn1.epicgames.com/spt-assets/148df842b2b14082be6b004f59a2765b/download-city-of-gangsters-offer-5jbgv.jpg"
+              "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CalloftheSea_OutoftheBlue_S2_1200x1600-db63acf0c479c185e0ef8f8e73c8f0d8"
             }
           ]
         },
         {
-          "title": "Recipe for Disaster",
-          "imageAlt": "Recipe for Disaster",
+          "title": "Rise of Industry",
+          "imageAlt": "Rise of Industry",
           "date": {
-            "startDate": "2023-02-09T16:00:00.000Z",
-            "endDate": "2023-02-16T16:00:00.000Z"
+            "startDate": "2023-03-09T16:00:00.000Z",
+            "endDate": "2023-03-16T16:00:00.000Z"
           },
           "keyImages": [
             {
               "type": "OfferImageWide",
-              "url": "https://cdn1.epicgames.com/spt-assets/83ddef361d0c45c2bef72e07c2a5f567/recipe-for-disaster-offer-rtr4w.jpg"
+              "url": "https://cdn1.epicgames.com/spt-assets/a6aeec29591b4b56b4383b4d2d7d0e1e/rise-of-industry-offer-1p22f.jpg"
             },
             {
               "type": "OfferImageTall",
-              "url": "https://cdn1.epicgames.com/spt-assets/83ddef361d0c45c2bef72e07c2a5f567/download-recipe-for-disaster-offer-16eqs.jpg"
+              "url": "https://cdn1.epicgames.com/spt-assets/a6aeec29591b4b56b4383b4d2d7d0e1e/download-rise-of-industry-offer-1uujr.jpg"
             },
             {
               "type": "Thumbnail",
-              "url": "https://cdn1.epicgames.com/spt-assets/83ddef361d0c45c2bef72e07c2a5f567/download-recipe-for-disaster-offer-16eqs.jpg"
-            }
-          ]
-        },
-        {
-          "title": "Dishonored®: Death of the Outsider™",
-          "imageAlt": "Dishonored®: Death of the Outsider™",
-          "date": {
-            "startDate": "2023-02-02T16:00:00.000Z",
-            "endDate": "2023-02-09T16:00:00.000Z"
-          },
-          "keyImages": [
-            {
-              "type": "OfferImageTall",
-              "url": "https://cdn1.epicgames.com/offer/87c84bc5f43d4fe69ad8f3ccde0594b0/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S2_1200x1600-acb1abddb047a40709f270fa623f1f02"
-            },
-            {
-              "type": "OfferImageWide",
-              "url": "https://cdn1.epicgames.com/offer/87c84bc5f43d4fe69ad8f3ccde0594b0/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S1_2560x1440-7384b1e04742564e240e5e92722f82d6"
-            },
-            {
-              "type": "Thumbnail",
-              "url": "https://cdn1.epicgames.com/offer/87c84bc5f43d4fe69ad8f3ccde0594b0/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S2_1200x1600-acb1abddb047a40709f270fa623f1f02"
+              "url": "https://cdn1.epicgames.com/spt-assets/a6aeec29591b4b56b4383b4d2d7d0e1e/download-rise-of-industry-offer-1uujr.jpg"
             }
           ]
         },

@@ -1,5 +1,7 @@
+const steamData = require('../services/fetch/steam');
 const Articles = require('../models/articles');
 
+// Get all Articles
 const getArticles = async (req, res) => {
 
     //await Articles.create({title: "test Title"})
@@ -13,4 +15,11 @@ const getArticles = async (req, res) => {
     return res.json(articles)
 }
 
-module.exports = getArticles;
+// Get Steam Articles
+const getSteamArticles = async (req, res) => {
+    const data = await steamData();
+
+    return res.json(data)
+}
+
+module.exports = { getArticles, getSteamArticles };
